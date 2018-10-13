@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+        <TextView
+                android:id="@+id/Text_Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"/>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/Text_c_pub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="c_pub_key：" android:layout_weight="1"/>
+            <EditText android:id="@+id/c_pub_key" android:ems="10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="text" android:enabled="false" android:layout_weight="8"/>
+            <Button android:id="@+id/copy_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="复制" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+            <TextView android:id="@+id/Text_c_sha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="c_sha_key：" android:layout_weight="1"/>
+            <EditText android:id="@+id/c_sha_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false" android:layout_weight="15"/>
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+            <TextView android:id="@+id/Text_s_pub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="s_pub_key：" android:layout_weight="1"/>
+            <EditText android:id="@+id/s_pub_key" android:ems="10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="text" android:hint="输入 s_pub_key" android:layout_weight="3"/>
+            <Button android:id="@+id/ok_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="OnClick" android:text="计算" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+            <TextView android:id="@+id/Text_s_sha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="s_sha_key：" android:layout_weight="1"/>
+            <EditText android:id="@+id/s_sha_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false" android:layout_below="@+id/Text_Info" android:layout_weight="16"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
